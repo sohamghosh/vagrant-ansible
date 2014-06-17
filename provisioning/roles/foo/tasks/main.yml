@@ -1,0 +1,10 @@
+---
+
+- name: Trying...
+  copy: src=hello.world dest=/home/vagrant/hola.world owner=vagrant group=vagrant mode=0644
+
+- name: Install Open JDK 7
+  yum: name=java-1.7.0-openjdk-devel state=latest
+
+- name: Install Git
+  yum: name=git state=latest
